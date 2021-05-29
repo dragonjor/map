@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_25fb884f682643dba74b67e0ef3fea9f {
+                    position: relative;
+                    width: 1000.0px;
+                    height: 800.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_25fb884f682643dba74b67e0ef3fea9f" ></div>
+        
+</body>
+<script>    
+    
+            var map_25fb884f682643dba74b67e0ef3fea9f = L.map(
+                "map_25fb884f682643dba74b67e0ef3fea9f",
+                {
+                    center: [30.5, 114.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14.3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4f03e05f99d44f899bb0e37b75f68fc6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_25fb884f682643dba74b67e0ef3fea9f);
+        
+    
+            var marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557 = L.markerClusterGroup(
+                {}
+            );
+            map_25fb884f682643dba74b67e0ef3fea9f.addLayer(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var marker_beb0bb5137ee4eeaa065c2c82e2b5910 = L.marker(
+                [30.5421378, 114.3060467],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_af205616015944ec95a14f5dba8a8717 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_beb0bb5137ee4eeaa065c2c82e2b5910.setIcon(icon_af205616015944ec95a14f5dba8a8717);
+        
+    
+        var popup_169e25746255487685fad4e01c106f69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54d47a99d8514a27a7f0789e00f3350d = $(`<div id="html_54d47a99d8514a27a7f0789e00f3350d" style="width: 100.0%; height: 100.0%;">武昌起义军政府旧址</div>`)[0];
+            popup_169e25746255487685fad4e01c106f69.setContent(html_54d47a99d8514a27a7f0789e00f3350d);
+        
+
+        marker_beb0bb5137ee4eeaa065c2c82e2b5910.bindPopup(popup_169e25746255487685fad4e01c106f69)
+        ;
+
+        
+    
+    
+            var marker_bea4d8866bfa472ca4f3a66f8fdbe57a = L.marker(
+                [30.586683, 114.299656],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_b1067d5d1b824867a74307257b2eeb8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bea4d8866bfa472ca4f3a66f8fdbe57a.setIcon(icon_b1067d5d1b824867a74307257b2eeb8f);
+        
+    
+        var popup_7daa96c3b5994750b0124e3715665d6c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff63e177896945fe82a7ccbddd728924 = $(`<div id="html_ff63e177896945fe82a7ccbddd728924" style="width: 100.0%; height: 100.0%;">八七会议会址</div>`)[0];
+            popup_7daa96c3b5994750b0124e3715665d6c.setContent(html_ff63e177896945fe82a7ccbddd728924);
+        
+
+        marker_bea4d8866bfa472ca4f3a66f8fdbe57a.bindPopup(popup_7daa96c3b5994750b0124e3715665d6c)
+        ;
+
+        
+    
+    
+            var marker_f8c66f3b40104f1ba07b846e9427c2ec = L.marker(
+                [30.062619, 114.474861],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_361e416c32ec468f8aebed814634e62a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f8c66f3b40104f1ba07b846e9427c2ec.setIcon(icon_361e416c32ec468f8aebed814634e62a);
+        
+    
+        var popup_7a1f405bb1944cefa86230e70636adf3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2901e8e36e54a42a3b2751ea915ddd9 = $(`<div id="html_a2901e8e36e54a42a3b2751ea915ddd9" style="width: 100.0%; height: 100.0%;">湖泗瓷窑址群</div>`)[0];
+            popup_7a1f405bb1944cefa86230e70636adf3.setContent(html_a2901e8e36e54a42a3b2751ea915ddd9);
+        
+
+        marker_f8c66f3b40104f1ba07b846e9427c2ec.bindPopup(popup_7a1f405bb1944cefa86230e70636adf3)
+        ;
+
+        
+    
+    
+            var marker_340970b29d274da7be84192dc3b18452 = L.marker(
+                [30.412374, 114.517253],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_147d6913d0d84e3ab96a596f8632e000 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_340970b29d274da7be84192dc3b18452.setIcon(icon_147d6913d0d84e3ab96a596f8632e000);
+        
+    
+        var popup_285d9bb772124f50bb9eed0ee86d82ad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c49197d2abe94a908ae7ea20a889e701 = $(`<div id="html_c49197d2abe94a908ae7ea20a889e701" style="width: 100.0%; height: 100.0%;">明楚王墓</div>`)[0];
+            popup_285d9bb772124f50bb9eed0ee86d82ad.setContent(html_c49197d2abe94a908ae7ea20a889e701);
+        
+
+        marker_340970b29d274da7be84192dc3b18452.bindPopup(popup_285d9bb772124f50bb9eed0ee86d82ad)
+        ;
+
+        
+    
+    
+            var marker_66045707676f40158c9f30f4195c7b33 = L.marker(
+                [30.5533847, 114.3002051],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_cb94256babdd4488a3165e59210eac98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_66045707676f40158c9f30f4195c7b33.setIcon(icon_cb94256babdd4488a3165e59210eac98);
+        
+    
+        var popup_f0f20113fda84ba5bef1922409b445cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86c6553ca0f44b859528e14c2fa9d6f3 = $(`<div id="html_86c6553ca0f44b859528e14c2fa9d6f3" style="width: 100.0%; height: 100.0%;">武汉农民运动讲习所旧址</div>`)[0];
+            popup_f0f20113fda84ba5bef1922409b445cd.setContent(html_86c6553ca0f44b859528e14c2fa9d6f3);
+        
+
+        marker_66045707676f40158c9f30f4195c7b33.bindPopup(popup_f0f20113fda84ba5bef1922409b445cd)
+        ;
+
+        
+    
+    
+            var marker_4a81656f4c62446dab4dbb6010519caa = L.marker(
+                [30.59409, 114.297234],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_26b4e89e1f6c4d269a373f9430972e98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4a81656f4c62446dab4dbb6010519caa.setIcon(icon_26b4e89e1f6c4d269a373f9430972e98);
+        
+    
+        var popup_ada61106b8034f42b256185437abe62e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15d3cee06cea4133ac6e277bd361887b = $(`<div id="html_15d3cee06cea4133ac6e277bd361887b" style="width: 100.0%; height: 100.0%;">大智门火车站</div>`)[0];
+            popup_ada61106b8034f42b256185437abe62e.setContent(html_15d3cee06cea4133ac6e277bd361887b);
+        
+
+        marker_4a81656f4c62446dab4dbb6010519caa.bindPopup(popup_ada61106b8034f42b256185437abe62e)
+        ;
+
+        
+    
+    
+            var marker_e99938cd425948daabd86d69251e5019 = L.marker(
+                [30.5766825, 114.2975499],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_351adc0e3ea84136a597d00472f56737 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e99938cd425948daabd86d69251e5019.setIcon(icon_351adc0e3ea84136a597d00472f56737);
+        
+    
+        var popup_45ab48743f9a4dd8970e428bf5c44b55 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2381b771c43e4ec6a0d51babc2278252 = $(`<div id="html_2381b771c43e4ec6a0d51babc2278252" style="width: 100.0%; height: 100.0%;">江汉关大楼</div>`)[0];
+            popup_45ab48743f9a4dd8970e428bf5c44b55.setContent(html_2381b771c43e4ec6a0d51babc2278252);
+        
+
+        marker_e99938cd425948daabd86d69251e5019.bindPopup(popup_45ab48743f9a4dd8970e428bf5c44b55)
+        ;
+
+        
+    
+    
+            var marker_5c0b648c81a64abbb2f7c93dbe437958 = L.marker(
+                [30.540023, 114.363586],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_f699633a4fac4c1ca3ec63f9488ad204 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5c0b648c81a64abbb2f7c93dbe437958.setIcon(icon_f699633a4fac4c1ca3ec63f9488ad204);
+        
+    
+        var popup_29cffb7b0fdb482c85b2459bbe1f8e3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa50184273aa495c945e67719dea855a = $(`<div id="html_aa50184273aa495c945e67719dea855a" style="width: 100.0%; height: 100.0%;">武汉大学早期建筑</div>`)[0];
+            popup_29cffb7b0fdb482c85b2459bbe1f8e3f.setContent(html_aa50184273aa495c945e67719dea855a);
+        
+
+        marker_5c0b648c81a64abbb2f7c93dbe437958.bindPopup(popup_29cffb7b0fdb482c85b2459bbe1f8e3f)
+        ;
+
+        
+    
+    
+            var marker_be76d1ff11a04e539b33f11d46c1cc83 = L.marker(
+                [30.585323, 114.299428],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_c2f82d952c654697bdff23a458ccc9fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_be76d1ff11a04e539b33f11d46c1cc83.setIcon(icon_c2f82d952c654697bdff23a458ccc9fd);
+        
+    
+        var popup_4f3e626021294d5c9fe609f1521dbdbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_367d62efbff9490e84b6d43fc089a230 = $(`<div id="html_367d62efbff9490e84b6d43fc089a230" style="width: 100.0%; height: 100.0%;">詹天佑故居</div>`)[0];
+            popup_4f3e626021294d5c9fe609f1521dbdbb.setContent(html_367d62efbff9490e84b6d43fc089a230);
+        
+
+        marker_be76d1ff11a04e539b33f11d46c1cc83.bindPopup(popup_4f3e626021294d5c9fe609f1521dbdbb)
+        ;
+
+        
+    
+    
+            var marker_bc3c2f8813a544f89cee9b7a920cdc48 = L.marker(
+                [30.578746, 114.278414],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_9cbcafa9e5e54111b2c97214994f0063 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bc3c2f8813a544f89cee9b7a920cdc48.setIcon(icon_9cbcafa9e5e54111b2c97214994f0063);
+        
+    
+        var popup_c09d694fb9e04f05ad70985858de3b01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eeea77f4d50844809729d0255824d0da = $(`<div id="html_eeea77f4d50844809729d0255824d0da" style="width: 100.0%; height: 100.0%;">汉口近代建筑群</div>`)[0];
+            popup_c09d694fb9e04f05ad70985858de3b01.setContent(html_eeea77f4d50844809729d0255824d0da);
+        
+
+        marker_bc3c2f8813a544f89cee9b7a920cdc48.bindPopup(popup_c09d694fb9e04f05ad70985858de3b01)
+        ;
+
+        
+    
+    
+            var marker_db9dd4eee8a643018964b51ddca4324e = L.marker(
+                [30.533499, 114.308336],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_ea8401fdd4aa4f318198074e80302aaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_db9dd4eee8a643018964b51ddca4324e.setIcon(icon_ea8401fdd4aa4f318198074e80302aaf);
+        
+    
+        var popup_0622c565fab04303b7740406f98186d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d554f7f38b1942479081687dc795c23e = $(`<div id="html_d554f7f38b1942479081687dc795c23e" style="width: 100.0%; height: 100.0%;">汉口中华全国总工会旧址</div>`)[0];
+            popup_0622c565fab04303b7740406f98186d1.setContent(html_d554f7f38b1942479081687dc795c23e);
+        
+
+        marker_db9dd4eee8a643018964b51ddca4324e.bindPopup(popup_0622c565fab04303b7740406f98186d1)
+        ;
+
+        
+    
+    
+            var marker_ae1aba59d0404f23b8f34cb08db884da = L.marker(
+                [30.533512, 114.334912],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_fe761c6f707540d8942dd97ecdd69667 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae1aba59d0404f23b8f34cb08db884da.setIcon(icon_fe761c6f707540d8942dd97ecdd69667);
+        
+    
+        var popup_64312dd523a54d3294c3a620a04e233b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92efe3583d9c4d8ca71d9e7b85f0fe65 = $(`<div id="html_92efe3583d9c4d8ca71d9e7b85f0fe65" style="width: 100.0%; height: 100.0%;">无影塔</div>`)[0];
+            popup_64312dd523a54d3294c3a620a04e233b.setContent(html_92efe3583d9c4d8ca71d9e7b85f0fe65);
+        
+
+        marker_ae1aba59d0404f23b8f34cb08db884da.bindPopup(popup_64312dd523a54d3294c3a620a04e233b)
+        ;
+
+        
+    
+    
+            var marker_cb168405abb84567a2adfdff12ba088e = L.marker(
+                [30.554777, 114.280541],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_9b3200ed5be7486bbd6045c30efa67ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cb168405abb84567a2adfdff12ba088e.setIcon(icon_9b3200ed5be7486bbd6045c30efa67ff);
+        
+    
+        var popup_7b04032371dd45e8aaf66d5196e8dadc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_932cc40186aa4e79b4747fb05b7a0961 = $(`<div id="html_932cc40186aa4e79b4747fb05b7a0961" style="width: 100.0%; height: 100.0%;">胜像宝塔</div>`)[0];
+            popup_7b04032371dd45e8aaf66d5196e8dadc.setContent(html_932cc40186aa4e79b4747fb05b7a0961);
+        
+
+        marker_cb168405abb84567a2adfdff12ba088e.bindPopup(popup_7b04032371dd45e8aaf66d5196e8dadc)
+        ;
+
+        
+    
+    
+            var marker_1e9d8d30949b4a9eb766473e910781ea = L.marker(
+                [30.555656, 114.28478],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_eaac7e96d1194da6a624ea3570c0edd4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1e9d8d30949b4a9eb766473e910781ea.setIcon(icon_eaac7e96d1194da6a624ea3570c0edd4);
+        
+    
+        var popup_3b22f3a66a694d7eb8df09e51220ee1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f573e110e644ce894dce68fe006c4b1 = $(`<div id="html_4f573e110e644ce894dce68fe006c4b1" style="width: 100.0%; height: 100.0%;">禹稷行宫</div>`)[0];
+            popup_3b22f3a66a694d7eb8df09e51220ee1f.setContent(html_4f573e110e644ce894dce68fe006c4b1);
+        
+
+        marker_1e9d8d30949b4a9eb766473e910781ea.bindPopup(popup_3b22f3a66a694d7eb8df09e51220ee1f)
+        ;
+
+        
+    
+    
+            var marker_97d99b03ca074dce8dbf486e6bb00401 = L.marker(
+                [30.6189568, 114.3062646],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_4133b38d19f842cfac21a709aeadf04e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_97d99b03ca074dce8dbf486e6bb00401.setIcon(icon_4133b38d19f842cfac21a709aeadf04e);
+        
+    
+        var popup_f45728cd4e324b99860fb4b65e74a341 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f020f33734894e9ea5fec20d02e048ce = $(`<div id="html_f020f33734894e9ea5fec20d02e048ce" style="width: 100.0%; height: 100.0%;">古德寺</div>`)[0];
+            popup_f45728cd4e324b99860fb4b65e74a341.setContent(html_f020f33734894e9ea5fec20d02e048ce);
+        
+
+        marker_97d99b03ca074dce8dbf486e6bb00401.bindPopup(popup_f45728cd4e324b99860fb4b65e74a341)
+        ;
+
+        
+    
+    
+            var marker_9d6e55796d26405880d87249fb70bd0e = L.marker(
+                [30.525564, 114.307835],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_855ebb5b70b14040acea31104ac1ba93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9d6e55796d26405880d87249fb70bd0e.setIcon(icon_855ebb5b70b14040acea31104ac1ba93);
+        
+    
+        var popup_dd7b126c62ab4ee1af3153d1a2530208 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3f7949580a14426b72385e159e976d6 = $(`<div id="html_d3f7949580a14426b72385e159e976d6" style="width: 100.0%; height: 100.0%;">起义门</div>`)[0];
+            popup_dd7b126c62ab4ee1af3153d1a2530208.setContent(html_d3f7949580a14426b72385e159e976d6);
+        
+
+        marker_9d6e55796d26405880d87249fb70bd0e.bindPopup(popup_dd7b126c62ab4ee1af3153d1a2530208)
+        ;
+
+        
+    
+    
+            var marker_7c6dceace15d4cf589e33c46dfc7c9b5 = L.marker(
+                [30.6243917, 114.317879],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_9bd846fa63734ed4ac381228bc3ce8a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7c6dceace15d4cf589e33c46dfc7c9b5.setIcon(icon_9bd846fa63734ed4ac381228bc3ce8a5);
+        
+    
+        var popup_cdc813126f0c4c84898618af55f6308f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3bde87ad610d467eb57e27a49d2d4a4a = $(`<div id="html_3bde87ad610d467eb57e27a49d2d4a4a" style="width: 100.0%; height: 100.0%;">京汉铁路总工会旧址</div>`)[0];
+            popup_cdc813126f0c4c84898618af55f6308f.setContent(html_3bde87ad610d467eb57e27a49d2d4a4a);
+        
+
+        marker_7c6dceace15d4cf589e33c46dfc7c9b5.bindPopup(popup_cdc813126f0c4c84898618af55f6308f)
+        ;
+
+        
+    
+    
+            var marker_34026002e8d54fcdbe140c0bbbe64381 = L.marker(
+                [30.6065389999999, 114.311159],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_673879cbd9974a7e9bb762c5418bc298 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_34026002e8d54fcdbe140c0bbbe64381.setIcon(icon_673879cbd9974a7e9bb762c5418bc298);
+        
+    
+        var popup_3c5ab38552e54553bcff2d3690949006 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75c9b56559ab4637874e6669f6e1edae = $(`<div id="html_75c9b56559ab4637874e6669f6e1edae" style="width: 100.0%; height: 100.0%;">汉口中共中央宣传部旧址</div>`)[0];
+            popup_3c5ab38552e54553bcff2d3690949006.setContent(html_75c9b56559ab4637874e6669f6e1edae);
+        
+
+        marker_34026002e8d54fcdbe140c0bbbe64381.bindPopup(popup_3c5ab38552e54553bcff2d3690949006)
+        ;
+
+        
+    
+    
+            var marker_05f28c6474cc4d57abc0e1679e0b6193 = L.marker(
+                [30.5509687, 114.2986767],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_633fc0c6499f4e9eaefe4ab72e446e05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_05f28c6474cc4d57abc0e1679e0b6193.setIcon(icon_633fc0c6499f4e9eaefe4ab72e446e05);
+        
+    
+        var popup_9e3971e37f774c69947719cd55c0a344 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_879a2d7b70e74a83a50404f0f2ffabf4 = $(`<div id="html_879a2d7b70e74a83a50404f0f2ffabf4" style="width: 100.0%; height: 100.0%;">中国共产党第五次全国代表大会旧址</div>`)[0];
+            popup_9e3971e37f774c69947719cd55c0a344.setContent(html_879a2d7b70e74a83a50404f0f2ffabf4);
+        
+
+        marker_05f28c6474cc4d57abc0e1679e0b6193.bindPopup(popup_9e3971e37f774c69947719cd55c0a344)
+        ;
+
+        
+    
+    
+            var marker_f901f1d648014e3c98c8a745461dbcff = L.marker(
+                [30.5397536, 114.296582],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_9db5c4a24fa7445ca78c0dcf292af149 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f901f1d648014e3c98c8a745461dbcff.setIcon(icon_9db5c4a24fa7445ca78c0dcf292af149);
+        
+    
+        var popup_ba3e139712a54cf896efc4b30cf5f4ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee129f11bfec4a6fb9ffd562414652a9 = $(`<div id="html_ee129f11bfec4a6fb9ffd562414652a9" style="width: 100.0%; height: 100.0%;">武汉中央军事政治学校旧址</div>`)[0];
+            popup_ba3e139712a54cf896efc4b30cf5f4ab.setContent(html_ee129f11bfec4a6fb9ffd562414652a9);
+        
+
+        marker_f901f1d648014e3c98c8a745461dbcff.bindPopup(popup_ba3e139712a54cf896efc4b30cf5f4ab)
+        ;
+
+        
+    
+    
+            var marker_c12cee1b9b1b4113bc33f67eebdd0030 = L.marker(
+                [30.584974, 114.289608],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_b351bb0bdc82408ba95250100a5de069 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c12cee1b9b1b4113bc33f67eebdd0030.setIcon(icon_b351bb0bdc82408ba95250100a5de069);
+        
+    
+        var popup_eb33a66ee14c4de5a9ce2bec2dfeae85 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e6c10f8e3894a1ab3a67950679a33f1 = $(`<div id="html_5e6c10f8e3894a1ab3a67950679a33f1" style="width: 100.0%; height: 100.0%;">武汉中共中央机关旧址</div>`)[0];
+            popup_eb33a66ee14c4de5a9ce2bec2dfeae85.setContent(html_5e6c10f8e3894a1ab3a67950679a33f1);
+        
+
+        marker_c12cee1b9b1b4113bc33f67eebdd0030.bindPopup(popup_eb33a66ee14c4de5a9ce2bec2dfeae85)
+        ;
+
+        
+    
+    
+            var marker_7e1a7b364caa4b84b78b5b44c5a3eef0 = L.marker(
+                [30.5533847, 114.3002051],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_d727c651751b468fb75f96a93fc5968d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7e1a7b364caa4b84b78b5b44c5a3eef0.setIcon(icon_d727c651751b468fb75f96a93fc5968d);
+        
+    
+        var popup_91d9f9b557684561b34946b1ed7537ef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7394e994e7a64202b50c82695a5cfdf3 = $(`<div id="html_7394e994e7a64202b50c82695a5cfdf3" style="width: 100.0%; height: 100.0%;">湖北省立国书馆旧址</div>`)[0];
+            popup_91d9f9b557684561b34946b1ed7537ef.setContent(html_7394e994e7a64202b50c82695a5cfdf3);
+        
+
+        marker_7e1a7b364caa4b84b78b5b44c5a3eef0.bindPopup(popup_91d9f9b557684561b34946b1ed7537ef)
+        ;
+
+        
+    
+    
+            var marker_1dd1089209f245b38a877393d52bd5d1 = L.marker(
+                [30.6065389999999, 114.311159],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_0cb28ec1bb59410e89db16c5bd9bb6cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1dd1089209f245b38a877393d52bd5d1.setIcon(icon_0cb28ec1bb59410e89db16c5bd9bb6cf);
+        
+    
+        var popup_cdad3cf7751e4c5988b6ee76f9f11297 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84ad715161774c439c193bb1818a43d7 = $(`<div id="html_84ad715161774c439c193bb1818a43d7" style="width: 100.0%; height: 100.0%;">汉口新四军军部旧址</div>`)[0];
+            popup_cdad3cf7751e4c5988b6ee76f9f11297.setContent(html_84ad715161774c439c193bb1818a43d7);
+        
+
+        marker_1dd1089209f245b38a877393d52bd5d1.bindPopup(popup_cdad3cf7751e4c5988b6ee76f9f11297)
+        ;
+
+        
+    
+    
+            var marker_afe9d92aad4b48019fc4ba3e19cb549e = L.marker(
+                [30.606211, 114.309492],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_0eb06e7bc1d744628f7c4449bf9ecc68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_afe9d92aad4b48019fc4ba3e19cb549e.setIcon(icon_0eb06e7bc1d744628f7c4449bf9ecc68);
+        
+    
+        var popup_77d6b38b469d47af86f340c323eb3cca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0dbfbaeef54b41fb98cc1d55fbed5b28 = $(`<div id="html_0dbfbaeef54b41fb98cc1d55fbed5b28" style="width: 100.0%; height: 100.0%;">八路军武汉办事处旧址</div>`)[0];
+            popup_77d6b38b469d47af86f340c323eb3cca.setContent(html_0dbfbaeef54b41fb98cc1d55fbed5b28);
+        
+
+        marker_afe9d92aad4b48019fc4ba3e19cb549e.bindPopup(popup_77d6b38b469d47af86f340c323eb3cca)
+        ;
+
+        
+    
+    
+            var marker_bde47c57e18545bdb8d77a76eac8299a = L.marker(
+                [30.5495832, 114.2884177],
+                {}
+            ).addTo(marker_cluster_cc3ff4766a7a46e98062d14f7c1e0557);
+        
+    
+            var icon_9fdda9a0f4b349fc98d6ea729f8c273d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bde47c57e18545bdb8d77a76eac8299a.setIcon(icon_9fdda9a0f4b349fc98d6ea729f8c273d);
+        
+    
+        var popup_61d3c513972048c78c451e26679ae203 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8765a17bc2eb4f30ae0f9115d4cd025d = $(`<div id="html_8765a17bc2eb4f30ae0f9115d4cd025d" style="width: 100.0%; height: 100.0%;">武汉长江大桥</div>`)[0];
+            popup_61d3c513972048c78c451e26679ae203.setContent(html_8765a17bc2eb4f30ae0f9115d4cd025d);
+        
+
+        marker_bde47c57e18545bdb8d77a76eac8299a.bindPopup(popup_61d3c513972048c78c451e26679ae203)
+        ;
+
+        
+    
+</script>
